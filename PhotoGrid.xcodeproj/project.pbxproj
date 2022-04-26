@@ -9,12 +9,22 @@
 /* Begin PBXBuildFile section */
 		DE932B4028178D7000CD2F2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE932B3F28178D7000CD2F2B /* AppDelegate.swift */; };
 		DE932B4228178D7000CD2F2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE932B4128178D7000CD2F2B /* SceneDelegate.swift */; };
-		DE932B4428178D7000CD2F2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE932B4328178D7000CD2F2B /* ViewController.swift */; };
 		DE932B4728178D7000CD2F2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE932B4528178D7000CD2F2B /* Main.storyboard */; };
 		DE932B4928178D7300CD2F2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE932B4828178D7300CD2F2B /* Assets.xcassets */; };
 		DE932B4C28178D7300CD2F2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE932B4A28178D7300CD2F2B /* LaunchScreen.storyboard */; };
 		DE932B5728178D7400CD2F2B /* PhotoGridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE932B5628178D7400CD2F2B /* PhotoGridTests.swift */; };
 		DE932B6228178D7400CD2F2B /* PhotoGridUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE932B6128178D7400CD2F2B /* PhotoGridUITests.swift */; };
+		DE932B7528178E6700CD2F2B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE932B7428178E6700CD2F2B /* BaseViewController.swift */; };
+		DE932B7A28178EA200CD2F2B /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE932B7928178EA200CD2F2B /* BaseViewModel.swift */; };
+		DE932B8028178EFB00CD2F2B /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE932B7F28178EFB00CD2F2B /* PhotoViewModel.swift */; };
+		DE932B8928178F4400CD2F2B /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE932B8828178F4400CD2F2B /* PhotoViewController.swift */; };
+		DE932B9228178F8900CD2F2B /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE932B9128178F8900CD2F2B /* PhotoDetailViewController.swift */; };
+		DE932BA22817923500CD2F2B /* PhotoGridDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE932BA12817923500CD2F2B /* PhotoGridDatasource.swift */; };
+		DE932BA72817924500CD2F2B /* PhotoGridDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE932BA62817924500CD2F2B /* PhotoGridDelegate.swift */; };
+		DE932BAD28179CE800CD2F2B /* PhotoGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE932BAC28179CE800CD2F2B /* PhotoGridCell.swift */; };
+		DE932BB52817B9BF00CD2F2B /* PhotoGridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE932BB42817B9BF00CD2F2B /* PhotoGridCell.xib */; };
+		DE932BBB2817BB4E00CD2F2B /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE932BBA2817BB4E00CD2F2B /* Photo.swift */; };
+		DE932BC42817C36800CD2F2B /* XibInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE932BC32817C36800CD2F2B /* XibInitializable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +48,6 @@
 		DE932B3C28178D7000CD2F2B /* PhotoGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE932B3F28178D7000CD2F2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE932B4128178D7000CD2F2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE932B4328178D7000CD2F2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE932B4628178D7000CD2F2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE932B4828178D7300CD2F2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE932B4B28178D7300CD2F2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,17 @@
 		DE932B5D28178D7400CD2F2B /* PhotoGridUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoGridUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE932B6128178D7400CD2F2B /* PhotoGridUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridUITests.swift; sourceTree = "<group>"; };
 		DE932B6328178D7400CD2F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE932B7428178E6700CD2F2B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DE932B7928178EA200CD2F2B /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		DE932B7F28178EFB00CD2F2B /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		DE932B8828178F4400CD2F2B /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		DE932B9128178F8900CD2F2B /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		DE932BA12817923500CD2F2B /* PhotoGridDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridDatasource.swift; sourceTree = "<group>"; };
+		DE932BA62817924500CD2F2B /* PhotoGridDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridDelegate.swift; sourceTree = "<group>"; };
+		DE932BAC28179CE800CD2F2B /* PhotoGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridCell.swift; sourceTree = "<group>"; };
+		DE932BB42817B9BF00CD2F2B /* PhotoGridCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoGridCell.xib; sourceTree = "<group>"; };
+		DE932BBA2817BB4E00CD2F2B /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		DE932BC32817C36800CD2F2B /* XibInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibInitializable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +119,14 @@
 		DE932B3E28178D7000CD2F2B /* PhotoGrid */ = {
 			isa = PBXGroup;
 			children = (
-				DE932B3F28178D7000CD2F2B /* AppDelegate.swift */,
-				DE932B4128178D7000CD2F2B /* SceneDelegate.swift */,
-				DE932B4328178D7000CD2F2B /* ViewController.swift */,
-				DE932B4528178D7000CD2F2B /* Main.storyboard */,
-				DE932B4828178D7300CD2F2B /* Assets.xcassets */,
-				DE932B4A28178D7300CD2F2B /* LaunchScreen.storyboard */,
+				DE932BC22817C35000CD2F2B /* Utility */,
+				DE932BB92817BB3B00CD2F2B /* Model */,
 				DE932B4D28178D7300CD2F2B /* Info.plist */,
+				DE932B8728178F2700CD2F2B /* ViewController */,
+				DE932B7E28178EC500CD2F2B /* ViewModel */,
+				DE932B7328178E4300CD2F2B /* Base */,
+				DE932B7228178E1B00CD2F2B /* SupportingFiles */,
+				DE932B4528178D7000CD2F2B /* Main.storyboard */,
 			);
 			path = PhotoGrid;
 			sourceTree = "<group>";
@@ -126,6 +147,87 @@
 				DE932B6328178D7400CD2F2B /* Info.plist */,
 			);
 			path = PhotoGridUITests;
+			sourceTree = "<group>";
+		};
+		DE932B7228178E1B00CD2F2B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DE932B3F28178D7000CD2F2B /* AppDelegate.swift */,
+				DE932B4128178D7000CD2F2B /* SceneDelegate.swift */,
+				DE932B4828178D7300CD2F2B /* Assets.xcassets */,
+				DE932B4A28178D7300CD2F2B /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		DE932B7328178E4300CD2F2B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DE932B7428178E6700CD2F2B /* BaseViewController.swift */,
+				DE932B7928178EA200CD2F2B /* BaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DE932B7E28178EC500CD2F2B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE932B7F28178EFB00CD2F2B /* PhotoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE932B8728178F2700CD2F2B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DE932B9F281791E600CD2F2B /* Photo */,
+				DE932B9128178F8900CD2F2B /* PhotoDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DE932B9F281791E600CD2F2B /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				DE932BAB28179CCF00CD2F2B /* Cell */,
+				DE932BA02817921200CD2F2B /* Datasource */,
+				DE932B8828178F4400CD2F2B /* PhotoViewController.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		DE932BA02817921200CD2F2B /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				DE932BA12817923500CD2F2B /* PhotoGridDatasource.swift */,
+				DE932BA62817924500CD2F2B /* PhotoGridDelegate.swift */,
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		DE932BAB28179CCF00CD2F2B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DE932BAC28179CE800CD2F2B /* PhotoGridCell.swift */,
+				DE932BB42817B9BF00CD2F2B /* PhotoGridCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DE932BB92817BB3B00CD2F2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE932BBA2817BB4E00CD2F2B /* Photo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE932BC22817C35000CD2F2B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				DE932BC32817C36800CD2F2B /* XibInitializable.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +335,7 @@
 			files = (
 				DE932B4C28178D7300CD2F2B /* LaunchScreen.storyboard in Resources */,
 				DE932B4928178D7300CD2F2B /* Assets.xcassets in Resources */,
+				DE932BB52817B9BF00CD2F2B /* PhotoGridCell.xib in Resources */,
 				DE932B4728178D7000CD2F2B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +361,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE932B4428178D7000CD2F2B /* ViewController.swift in Sources */,
+				DE932B8028178EFB00CD2F2B /* PhotoViewModel.swift in Sources */,
+				DE932BC42817C36800CD2F2B /* XibInitializable.swift in Sources */,
+				DE932BA72817924500CD2F2B /* PhotoGridDelegate.swift in Sources */,
+				DE932B7A28178EA200CD2F2B /* BaseViewModel.swift in Sources */,
+				DE932B7528178E6700CD2F2B /* BaseViewController.swift in Sources */,
+				DE932BAD28179CE800CD2F2B /* PhotoGridCell.swift in Sources */,
+				DE932B8928178F4400CD2F2B /* PhotoViewController.swift in Sources */,
 				DE932B4028178D7000CD2F2B /* AppDelegate.swift in Sources */,
+				DE932BBB2817BB4E00CD2F2B /* Photo.swift in Sources */,
+				DE932B9228178F8900CD2F2B /* PhotoDetailViewController.swift in Sources */,
 				DE932B4228178D7000CD2F2B /* SceneDelegate.swift in Sources */,
+				DE932BA22817923500CD2F2B /* PhotoGridDatasource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
