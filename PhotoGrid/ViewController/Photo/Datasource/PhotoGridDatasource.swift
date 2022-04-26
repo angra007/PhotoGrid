@@ -29,5 +29,6 @@ class PhotoGridDatasource: NSObject, UICollectionViewDataSource {
         cell.bind(photo: photo)
         return cell
     }
+    
 }
 

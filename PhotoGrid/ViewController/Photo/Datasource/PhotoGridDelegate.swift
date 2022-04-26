@@ -12,7 +12,7 @@ protocol PhotoGridSelectionDelegate: AnyObject {
     func didLongPressPhoto(atIndex index: Int)
 }
 
-class PhotoGridDelegate: NSObject, UICollectionViewDelegate {
+class PhotoGridDelegate: NSObject, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     private weak var photoSelectionDelegate : PhotoGridSelectionDelegate?
     
@@ -23,4 +23,16 @@ class PhotoGridDelegate: NSObject, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.photoSelectionDelegate?.didLongPressPhoto(atIndex: indexPath.row)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let collectionViewSize = collectionView.frame.size.width
+        return CGSize(width: collectionViewSize/2, height: collectionViewSize/2)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+    }
+    
 }
