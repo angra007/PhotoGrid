@@ -9,13 +9,14 @@ import UIKit
 
 class PhotoViewController: BaseViewController {
     
-    @IBOutlet weak var collectionView: UICollectionView! {
-        didSet {
-            collectionView.delegate = photoGridDelegate
-            collectionView.dataSource = photoGridDatasource
-            collectionView.register(PhotoGridCell.fromXib(), forCellWithReuseIdentifier: PhotoGridCell.identifier)
-        }
-    }
+    
+    private let collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        let photoCollectionView = UICollectionView.init(frame: .zero, collectionViewLayout: layout)
+        photoCollectionView.register(PhotoGridCell.self, forCellWithReuseIdentifier: PhotoGridCell.identifier)
+        photoCollectionView.backgroundColor = UIColor.white
+        return photoCollectionView
+    }()
     
     private lazy var photoViewModel: PhotoViewModel = {
         PhotoViewModel(delegate: self)
@@ -32,12 +33,32 @@ class PhotoViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Photo Grid"
+        view.addSubview(collectionView)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .add, target: self, action: #selector(didTapAddButton))
-        
+        collectionView.dataSource = photoGridDatasource
+        collectionView.delegate = photoGridDelegate
+        collectionView.frame = view.bounds
     }
     
     @objc func didTapAddButton() {
-        photoViewModel.insert(image: UIImage(named: "pika")!)
+        
+        let alert = UIAlertController(title: nil, message: "Please select one option", preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Gallery", style: .default, handler: { (action) in
+            self.photoViewModel.insert(image: UIImage(named: "pika")!)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action) in
+            
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action) in
+            
+        }))
+        
+        present(alert, animated: true) {
+            print("Alert presented")
+        }
     }
 
 }

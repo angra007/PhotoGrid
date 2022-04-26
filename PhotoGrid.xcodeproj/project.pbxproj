@@ -22,7 +22,6 @@
 		DE932BA22817923500CD2F2B /* PhotoGridDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE932BA12817923500CD2F2B /* PhotoGridDatasource.swift */; };
 		DE932BA72817924500CD2F2B /* PhotoGridDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE932BA62817924500CD2F2B /* PhotoGridDelegate.swift */; };
 		DE932BAD28179CE800CD2F2B /* PhotoGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE932BAC28179CE800CD2F2B /* PhotoGridCell.swift */; };
-		DE932BB52817B9BF00CD2F2B /* PhotoGridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE932BB42817B9BF00CD2F2B /* PhotoGridCell.xib */; };
 		DE932BBB2817BB4E00CD2F2B /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE932BBA2817BB4E00CD2F2B /* Photo.swift */; };
 		DE932BC42817C36800CD2F2B /* XibInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE932BC32817C36800CD2F2B /* XibInitializable.swift */; };
 /* End PBXBuildFile section */
@@ -66,7 +65,6 @@
 		DE932BA12817923500CD2F2B /* PhotoGridDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridDatasource.swift; sourceTree = "<group>"; };
 		DE932BA62817924500CD2F2B /* PhotoGridDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridDelegate.swift; sourceTree = "<group>"; };
 		DE932BAC28179CE800CD2F2B /* PhotoGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridCell.swift; sourceTree = "<group>"; };
-		DE932BB42817B9BF00CD2F2B /* PhotoGridCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoGridCell.xib; sourceTree = "<group>"; };
 		DE932BBA2817BB4E00CD2F2B /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		DE932BC32817C36800CD2F2B /* XibInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibInitializable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,26 +188,25 @@
 			isa = PBXGroup;
 			children = (
 				DE932BAB28179CCF00CD2F2B /* Cell */,
-				DE932BA02817921200CD2F2B /* Datasource */,
+				DE932BA02817921200CD2F2B /* CollectionView */,
 				DE932B8828178F4400CD2F2B /* PhotoViewController.swift */,
 			);
 			path = Photo;
 			sourceTree = "<group>";
 		};
-		DE932BA02817921200CD2F2B /* Datasource */ = {
+		DE932BA02817921200CD2F2B /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
 				DE932BA12817923500CD2F2B /* PhotoGridDatasource.swift */,
 				DE932BA62817924500CD2F2B /* PhotoGridDelegate.swift */,
 			);
-			path = Datasource;
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		DE932BAB28179CCF00CD2F2B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				DE932BAC28179CE800CD2F2B /* PhotoGridCell.swift */,
-				DE932BB42817B9BF00CD2F2B /* PhotoGridCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -335,7 +332,6 @@
 			files = (
 				DE932B4C28178D7300CD2F2B /* LaunchScreen.storyboard in Resources */,
 				DE932B4928178D7300CD2F2B /* Assets.xcassets in Resources */,
-				DE932BB52817B9BF00CD2F2B /* PhotoGridCell.xib in Resources */,
 				DE932B4728178D7000CD2F2B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
